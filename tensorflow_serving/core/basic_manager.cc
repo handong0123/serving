@@ -230,8 +230,8 @@ Status BasicManager::Create(Options options,
   return Status::OK();
 }
 
-BasicManager::BasicManager(Env* const env, const uint32 num_load_threads,
-                           const uint32 num_unload_threads,
+BasicManager::BasicManager(Env* const env, uint32 num_load_threads,
+                           uint32 num_unload_threads,
                            uint32 max_num_load_retries,
                            int64 load_retry_interval_micros,
                            bool flush_filesystem_caches,
